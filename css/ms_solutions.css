@@ -123,3 +123,26 @@
   95%  { right: -20%; bottom: -10px }
   100% { right:  10%; bottom: -10px }
 }
+
+
+
+/*************************************
+    SCHERZO
+*/
+
+[class*="-xs-"]:nth-child(3n+2) {
+  animation: test 4s linear 10s 2 alternate;
+}
+[class*="-xs-"]:nth-child(2n+1) {
+  animation: test 4s linear 14s 2 alternate;
+}
+[class*="col-"] {
+  animation: test 4s linear 18s 1 alternate;
+}
+@keyframes test {
+0%   {transform: rotate(0deg);}
+25%  {transform: rotate(10deg);}
+50%  {transform: rotate(360deg);}
+75%  {transform: rotate(750deg);}
+100% {transform: rotate(0deg);}
+}
