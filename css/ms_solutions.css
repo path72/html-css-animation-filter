@@ -59,26 +59,31 @@
   transition: all 1s;
 }
 .ex-9-img:hover {
-  margin: 0px 0px;
-  width: 575px;
   border-radius: 30px;
   filter: grayscale(1);
   filter: sepia(0.75);
+  /* modo 1 */
+  /* margin: 0px 0px; */
+  /* width: 575px; */
+  /* modo 2 */
+  transform:scale(2);
 }
 .ex-10-icon {
   animation: ex-10-rotation 5s linear 0s infinite normal;
 }
 @keyframes ex-10-rotation {
+  /* modo 1 */
   100%  { transform: rotate(360deg); }
+  /* modo 2 */
+  /* from { transform: rotate(0deg); } */
+  /* to {transform: rotate(360deg); } */
 }
 .ex-11-icon:hover {
-  animation: ex-11-rotation 3s linear 0s 1 normal;
+  animation: ex-11-rotation 2s linear 0s 1 normal;
 }
 @keyframes ex-11-rotation {
   0%   { transform: rotate(0deg);   }
-  25%  { transform: rotate(90deg);  }
-  50%  { transform: rotate(180deg); }
-  75%  { transform: rotate(270deg); }
+  90%  { transform: rotate(270deg); }
   100% { transform: rotate(0deg);   }
 }
 .ex-12-button:hover .ex-12-top-white {
@@ -129,7 +134,7 @@
 /*************************************
     SCHERZO
 */
-
+/* 
 [class*="-xs-"]:nth-child(3n+2) {
   animation: test 4s linear 10s 2 alternate;
 }
@@ -145,4 +150,4 @@
 50%  {transform: rotate(360deg);}
 75%  {transform: rotate(750deg);}
 100% {transform: rotate(0deg);}
-}
+} */
